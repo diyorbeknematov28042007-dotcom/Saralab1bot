@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: referral-bot
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: ADMIN_IDS
+        value: 6552126335,8013328081
