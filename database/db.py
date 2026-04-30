@@ -32,7 +32,6 @@ async def create_tables():
             referred_by BIGINT,
             created_at TIMESTAMP DEFAULT NOW()
         );
-
         CREATE TABLE IF NOT EXISTS channels (
             id SERIAL PRIMARY KEY,
             channel_id TEXT NOT NULL,
@@ -41,7 +40,6 @@ async def create_tables():
             is_active BOOLEAN DEFAULT TRUE,
             created_at TIMESTAMP DEFAULT NOW()
         );
-
         CREATE TABLE IF NOT EXISTS referral_projects (
             id SERIAL PRIMARY KEY,
             name TEXT NOT NULL,
@@ -56,7 +54,6 @@ async def create_tables():
             created_at TIMESTAMP DEFAULT NOW(),
             ended_at TIMESTAMP
         );
-
         CREATE TABLE IF NOT EXISTS referral_stats (
             id SERIAL PRIMARY KEY,
             project_id INTEGER REFERENCES referral_projects(id),
