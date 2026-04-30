@@ -25,4 +25,4 @@ async def health(request):
 async def on_startup(bot: Bot):
     await create_pool()
     await bot.set_webhook(WEBHOOK_URL)
-    print(f"✅ Bot started, webhook: {WEBHOOK_URL
+    print(f"✅ Bot started, webhook: {WEBHOOK_URL}")
