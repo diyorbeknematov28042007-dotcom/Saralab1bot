@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = os.getenvpostgresql://postgres.xnfkhvbqovrnihqdhiln:D1yoRBeK2804@aws-1-ap-northeast-1.pooler.supabase.com:6543/postgres
 
 _pool = None
 
